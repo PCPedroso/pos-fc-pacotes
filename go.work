@@ -1,0 +1,13 @@
+// Criado utilizando o comando abaixo
+// go work init . ./math
+// Faz com que o sistema procure nas pastas relativas as importações caso não esteja publicadas
+// ex do import utilizado no main.go que é "github.com/PCPedroso/pos-fc-pacotes/math"
+// Para utilizar este workspace, e poder fazer importação de dependências utilizando o "tidy" execute da seguinte forma
+// go mod tidy -e
+// desta forma ele vai ignorar os pacotes que ele encontrar na relação abaixo
+go 1.22.1
+
+use (
+	.
+	./math
+)
